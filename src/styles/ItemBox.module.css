@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 162.5px;
+  height: 220px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 0 15px 10px 0;
+  cursor: pointer;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.info {
+  width: 142.5px;
+  height: 80px;
+  margin: 20px 0 0 10px;
+}
+
+.name {
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #542084;
+  font-weight: 700;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+}
