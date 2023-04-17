@@ -11,8 +11,8 @@ async function logOut() {
   return response;
 }
 
-async function getProducts(last: number): Promise<{ page: Product[], pages: number[] }> {
-  const response = await api.get(`/products?limit=20&last=${last}`);
+async function getProducts(page: number): Promise<{ page: Product[], pages: number[] }> {
+  const response = await api.get(`/products?limit=24&page=${page}`);
   return response.data
 }
 

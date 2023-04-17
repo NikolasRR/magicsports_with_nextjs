@@ -20,7 +20,32 @@
   flex-wrap: wrap;
   margin-top: 30px;
   padding-left: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.page_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  color: black;
+  width: 170px;
+  margin-bottom: 18px;
+}
+
+.page_navigation p {
+  cursor: pointer;
+}
+
+.selected_page {
+  color: blue;
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
