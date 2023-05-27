@@ -16,10 +16,16 @@ async function getProducts(page: number): Promise<{ page: Product[], pages: numb
   return response.data
 }
 
+async function getProduct(id: number): Promise<Product> {
+  const response = await api.get(`/products/${id}`);
+  return response.data
+}
+
 const requests = {
   signIn,
   logOut,
-  getProducts
+  getProducts,
+  getProduct
 };
 
 export default requests;
